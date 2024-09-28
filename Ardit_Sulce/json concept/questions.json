@@ -1,0 +1,5 @@
+[{"question_text": "What is the capital of USA?",
+"alternatives": ["New York", "Washington, D.C.", "Seattle", "Boston"], 
+"correct_answer": 2}, 
+{"question_text": "What is the capital of India?", 
+"alternatives": ["New Delhi", "Mumbai", "Bangalore", "Chennai"], "correct_answer": 1}]

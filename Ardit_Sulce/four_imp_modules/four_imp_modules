@@ -1,0 +1,62 @@
+# Four important modules to learn in python are : csv, glob, webbrowser, shutil
+# Let's start with glob module
+# The glob function in the glob module returns a list of filepaths that satisfy a filename pattern
+
+import glob
+
+myfiles = glob.glob("*.txt")
+
+for filepath in myfiles:
+    with open(filepath, "r") as file:
+        print(file.read().upper())
+
+
+# ----------------------------------------------------------------
+
+# Let's move on to the csv module
+
+import csv
+
+# In the below code, reader is a function of the csv module. It takes file object as an argument and returns an iterator object, which is then passed to the list function to obtain a list of the file contents.
+
+with open("weather.csv", "r") as file:
+    data = list(csv.reader(file))
+
+city = input("Enter city name: ")
+ 
+for row in data[1:]:
+    if row[0] == city:
+        print(row[1])
+
+
+# ---------------------------------------------------------------
+# Now, the shutil module. shutil stands for shell utilities. To copy, zip, extract files from zip file, etc.
+
+import shutil 
+
+# The below line of code creates a zip file. It zips all the files that are present in the tozip directory.
+
+shutil.make_archive("output", "zip", "tozip")
+
+# --------------------------------------------------------------
+
+# Now, the webbrowser module.
+
+import webbrowser
+
+user_term = input("Enter a search term: ").replace(" ", "+")
+
+webbrowser.open("https://www.google.com/search?q=" + user_term)
+
+
+
+
+
+
+
+
+
+
+
+
+

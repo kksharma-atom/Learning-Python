@@ -1,0 +1,21 @@
+To add the URL for the remote repository where your local repository will be pushed, run the following command.
+
+git remote add origin REMOTE-URL
+
+To verify that you set the remote URL correctly, run the following command.
+
+git remote -v
+
+To push the changes in your local repository to GitHub.com, run the following command.
+
+git push origin main
+
+Make an existing Git branch track a remote branch
+
+git branch -u origin/<branch name>
+
+To severe ties with remote origin
+
+git remote remove origin
+
+
